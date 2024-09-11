@@ -1,0 +1,29 @@
+module mux4bit_2to1_tb;
+    reg [3:0] X;
+    reg [3:0] Y;
+    reg s;
+    wire [3:0] M;
+
+    mux4bit_2to1 uut (
+        .X(X),
+        .Y(Y),
+        .s(s),
+        .M(M)
+    );
+
+    initial begin
+        // Test case 1
+        X = 4'b1010; Y = 4'b0101; s = 0;
+        #10;
+        // Test case 2
+        s = 1;
+        #10;
+        // Test case 3
+        X = 4'b1111; Y = 4'b0000; s = 0;
+        #10;
+        // Test case 4
+        s = 1;
+        #10;
+        $stop;
+    end
+endmodule

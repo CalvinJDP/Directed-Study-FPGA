@@ -1,0 +1,11 @@
+module mux4bit_2to1 (
+    input [3:0] X,     // 4-bit input X
+    input [3:0] Y,     // 4-bit input Y
+    input s,           // select signal
+    output [3:0] M     // 4-bit output M
+);
+
+    // 4-bit wide 2-to-1 multiplexer logic
+    assign M = (s == 0) ? X : Y;
+
+endmodule
