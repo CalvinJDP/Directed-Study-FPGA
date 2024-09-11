@@ -1,0 +1,33 @@
+|SegTest
+clk => tens[0].CLK
+clk => tens[1].CLK
+clk => tens[2].CLK
+clk => tens[3].CLK
+clk => ones[0].CLK
+clk => ones[1].CLK
+clk => ones[2].CLK
+clk => ones[3].CLK
+rst_n => tens[0].ACLR
+rst_n => tens[1].ACLR
+rst_n => tens[2].ACLR
+rst_n => tens[3].ACLR
+rst_n => ones[0].ACLR
+rst_n => ones[1].ACLR
+rst_n => ones[2].ACLR
+rst_n => ones[3].ACLR
+HEX0[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+
